@@ -2,26 +2,177 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+ @layer base{
+    body{
+        color: #fff;
+        background-color: #000;
+    }
+ }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+ .btn-grad{
+    background-image: linear-gradient(
+        to right,
+        #1fa2ff 0%,
+        #12d8fa 51%,
+        #1fa2ff 100%
+    );
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    padding:0.5rem 1rem;
+    text-align: center;
+
+    transition: 0.5s;
+    background-size: 200% auto;
+
+    color:white;
+    border-radius:10px;
+    border:none;
+ }
+ .btn-grad:hover{
+    background-position: right center;
+    color:#fff;
+ }
+
+.ourSkills h1{
+   text-align: center;
+   color:#fff;
+   
+
 }
+.ourSkills p{
+  
+   text-align: center;
+}
+.ourSkillCircle{
+
+   justify-content: space-evenly;
+   margin-top: 40px;
+}
+.circle{
+   width: 150px;
+   height: 180px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.progress-circle1 {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background: conic-gradient(rgb(37, 168, 219) 0% 45%, rgb(137, 184, 222) 45% 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: ani 2.5s linear infinite
+ }
+ @keyframes ani {
+   to{transform: rotate(360deg);}
+ }
+ .progress-circle1::after {
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   background: white;
+   border-radius: 50%;
+ }
+ .progress-circle2 {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background: conic-gradient(rgb(37, 168, 219) 0% 45%, rgb(137, 184, 222)60% 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: ani 2.5s linear infinite
+ }
+ .progress-circle2::after {
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   background: white;
+   border-radius: 50%;
+ }
+ .progress-circle3 {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background: conic-gradient(rgb(37, 168, 219) 0% 45%, rgb(137, 184, 222) 75% 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: ani 2.5s linear infinite
+ }
+ .progress-circle3::after {
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   background: white;
+   border-radius: 50%;
+ }
+ .progress-circle4 {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background: conic-gradient(rgb(37, 168, 219) 0% 45%, rgb(137, 184, 222) 80% 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: ani 2.5s linear infinite
+ }
+ .progress-circle5 {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background: conic-gradient(rgb(37, 168, 219) 0% 45%, rgb(137, 184, 222) 80% 100%);
+  
+   align-items: center;
+   justify-content: center;
+   animation: ani 2.5s linear infinite
+ }
+ .progress-circle4::after {
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   background: white;
+   border-radius: 50%;
+ }
+ .percentage {
+   position: absolute;
+   font-size: 1.2em;
+   font-weight: bold;
+   color: black;
+   padding-bottom: 30px;
+  
+ }
+ 
+ .label {
+   margin-top: 10px;
+   font-size: 0.9em;
+   color:#fff;
+   text-align: center;
+   
+ }
+ @keyframes ani {
+   to{transform: rotate(360deg);}
+ }
+
+ @media (max-width:850px) {
+   .ourSkillCircle{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       justify-content: center;
+       align-content: center;
+       align-items: center;
+   }
+}
+ 
