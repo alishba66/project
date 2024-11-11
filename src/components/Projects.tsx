@@ -4,14 +4,14 @@ import Card from './Card';
 const data = [
     {
         id:0,
-        title:<a href='file:///C:/Users/sanaa/Desktop/Alish%20html/resume.html'>RESUME</a>,
+        title:'RESUME',
         describe: "",
         img:"/cv.PNG"
        
     },
     {
         id:1,
-         title:<a href="https://github.com/alishba66/simple-calculator">calculator</a>,
+         title:'calculator',
         describe: "",
         img:"/clu.jpg"
         
@@ -19,7 +19,7 @@ const data = [
     },
     {
         id:2,
-        title:<a href="https://github.com/alishba66/number-guessing-game">guessing game</a>,
+        title:'guessing game',
         describe: "",
         img:"/game.webp"
         
